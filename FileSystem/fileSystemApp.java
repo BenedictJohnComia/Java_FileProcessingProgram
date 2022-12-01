@@ -97,7 +97,7 @@ public class fileSystemApp{
                     counter++;
                 }
             }else{
-                System.out.println("\nYou currently have no notes.");
+                System.out.println("\nYou currently have no Notes.\n");
             }
             System.out.println("--------------------------------------------------------------------------");
 
