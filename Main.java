@@ -6,11 +6,10 @@ public class Main{
         Scanner input = new Scanner(System.in);
         boolean thisCondition = true;
         fileSystemApp mainFile = new fileSystemApp();
-        String userName;
 
         System.out.println("------------------------- FILE PROCESSING PROGRAM -------------------------");
         System.out.print("\nEnter your name: ");
-        userName = input.nextLine();
+        String userName = input.nextLine();
         System.out.println("\n**************************************************************************");
         System.out.println("               Welcome " + userName + " to the file processing program");
         System.out.println("A program where you can create, update, delete, display, and search notes");

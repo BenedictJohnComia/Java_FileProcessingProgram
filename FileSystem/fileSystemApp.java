@@ -12,7 +12,7 @@ public class fileSystemApp{
     
     public void addNote(){
         System.out.println("\nADD NOTE");
-        File fileItems = new File("Files.txt");
+        File fileItems = new File("Notes.txt");
         if (fileItems.exists() == true){
             arraySizeChecker();
         } else {
@@ -84,7 +84,7 @@ public class fileSystemApp{
 
     public void displayNotes(){
         try {
-            File fileItems = new File("Files.txt");
+            File fileItems = new File("Notes.txt");
             Scanner fileReader = new Scanner(fileItems);
 
             int counter = 1;
@@ -137,7 +137,7 @@ public class fileSystemApp{
 
     public void dataFileCreator() {
         try{
-            FileWriter dataFile = new FileWriter("Files.txt", true);
+            FileWriter dataFile = new FileWriter("Notes.txt", true);
             for (int ctr = filesOfApp.size()-1; ctr < filesOfApp.size(); ctr++){ 
                 dataFile.write(filesOfApp.get(ctr) + '\n');
             }
@@ -150,7 +150,7 @@ public class fileSystemApp{
 
     public void fileToArray(){
         try {
-            File fileItems = new File("Files.txt");
+            File fileItems = new File("Notes.txt");
             Scanner fileReader = new Scanner(fileItems);
             while (fileReader.hasNextLine()) {
                 String data = fileReader.nextLine();
@@ -165,9 +165,9 @@ public class fileSystemApp{
 
     public void arrayToFile(){
         try {
-            File fileDelete = new File("Files.txt");
+            File fileDelete = new File("Notes.txt");
             fileDelete.delete();
-            FileWriter fileItems = new FileWriter("Files.txt", true);
+            FileWriter fileItems = new FileWriter("Notes.txt", true);
             for(int idx = 0; idx < filesOfApp.size(); idx++){
                 fileItems.write(filesOfApp.get(idx) + '\n');
             }
