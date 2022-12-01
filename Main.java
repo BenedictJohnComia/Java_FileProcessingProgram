@@ -63,7 +63,6 @@ public class Main{
                     default:
                         System.out.println("\nInvalid Input. Please try again.");
                         break;
-                        
                 }
             } catch (Exception e){
                 input.nextLine();
